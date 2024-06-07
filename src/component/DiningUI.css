@@ -1,0 +1,54 @@
+/* src/DiningUI.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.position-relative {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 166px;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+  text-shadow: 2px 2px 4px #000000;
+  opacity: 0.7;
+  font-family: "Rankings Caps", "sans-serif";
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  z-index: 0;
+}
+.half-black-white {
+  background: linear-gradient(to top, #fff 50%, #000 50%);
+  position: relative;
+}
+.dining-left h3 {
+  font-size: 1.8rem;
+  color: #1d1d1d;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Rankings Caps", "sans-serif";
+}
+.dining-left {
+  width: 20%;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 102px;
+}
+
+.dining-left p {
+  font-size: 1rem;
+  color: #2f2625;
+  line-height: 1.5;
+  font-family: "miller-banner", "sans-serif";
+}

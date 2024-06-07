@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import Header from "./component/header";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Slider from "./component/slider";
+import CheckAvailability from "./component/CheckAvailability";
+import Dining from "./component/Dining";
+import DiningUI from "./component/DiningUI";
+import Events from "./component/Events";
+import Experience from "./component/Experience";
+import Footer from "./component/Footer";
+import GalleryboxComponent from "./component/GalleryboxComponent";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Slider />
+      <CheckAvailability />
+      <Dining />
+      <DiningUI />
+      <Events />
+      <Experience />
+      <GalleryboxComponent />
+      <Footer />
     </div>
   );
 }
